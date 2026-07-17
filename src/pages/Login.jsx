@@ -19,7 +19,7 @@ const Login = () => {
             />
             <div className="absolute inset-0 bg-black/40 flex flex-col justify-center p-12 text-white">
               <div className="mb-8">
-                <Logo className="text-white transform scale-150 origin-left" />
+                <Logo className="h-20 md:h-24" />
               </div>
               <p className="text-lg text-gray-200 mt-4">
                 Join our exclusive club for premium men's fashion. Unlock special offers, early access to new collections, and seamless checkout.

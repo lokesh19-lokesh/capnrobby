@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="mb-8 inline-block">
-              <Logo className="text-white transform scale-125 origin-left" />
+              <Logo className="h-16 md:h-20" />
             </Link>
             <p className="text-gray-400 mb-6 max-w-sm">
               Elevate your everyday style with premium men's wear crafted for confidence, comfort, and timeless fashion.

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { getTrendingProducts, categories } from '../utils/mockData';
 import ProductCard from '../components/ProductCard';
 import { FiTruck, FiShield, FiTag, FiRefreshCcw } from 'react-icons/fi';
+import heroVideo from '../assets/capnrobby.mp4';
 
 const Home = () => {
   const trendingProducts = getTrendingProducts();
@@ -13,11 +14,14 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=1600&q=80" 
-            alt="Hero Background" 
+          <video 
+            src={heroVideo} 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
             className="w-full h-full object-cover"
-          />
+          ></video>
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
         
