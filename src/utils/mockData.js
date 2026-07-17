@@ -10,8 +10,8 @@ export const products = [
     sizes: ["S", "M", "L", "XL"],
     colors: ["White", "Light Blue"],
     images: [
-      "https://images.unsplash.com/photo-1596755094514-f87e32f85e2c?w=800&q=80",
-      "https://images.unsplash.com/photo-1596755094514-f87e32f85e2c?w=800&q=80"
+      "/prod_white_shirt_1784290249931.png",
+      "/prod_white_shirt_1784290249931.png"
     ],
     description: "A tailored fit classic white dress shirt made from premium Egyptian cotton. Perfect for both formal and semi-formal occasions.",
     isNew: true,
@@ -68,7 +68,7 @@ export const products = [
     colors: ["Dark Denim"],
     images: [
       "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&q=80",
-      "https://images.unsplash.com/photo-1584324268393-3d922370c0c7?w=800&q=80"
+      "/prod_jeans_2_1784290261081.png"
     ],
     description: "Modern slim fit jeans crafted with a hint of stretch for all-day comfort. The perfect dark wash for any occasion.",
     isNew: true,
@@ -124,7 +124,7 @@ export const products = [
     sizes: ["M", "L", "XL"],
     colors: ["Black"],
     images: [
-      "https://images.unsplash.com/photo-1520975954732-57dd22299614?w=800&q=80",
+      "/prod_leather_jacket_1784290271035.png",
       "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80"
     ],
     description: "An iconic piece. Crafted from genuine top-grain leather, featuring asymmetrical zip closure and silver-tone hardware.",
