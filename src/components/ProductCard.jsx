@@ -82,9 +82,9 @@ const ProductCard = ({ product }) => {
           <span className="text-xs text-gray-500">({product.reviews})</span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="font-bold text-lg">${finalPrice.toFixed(2)}</span>
+          <span className="font-bold text-lg">₹{finalPrice.toFixed(2)}</span>
           {product.discount > 0 && (
-            <span className="text-sm text-gray-400 line-through">${product.price.toFixed(2)}</span>
+            <span className="text-sm text-gray-400 line-through">₹{product.price.toFixed(2)}</span>
           )}
         </div>
       </div>

@@ -9,7 +9,7 @@ const Cart = () => {
   const [discount, setDiscount] = useState(0);
 
   const subtotal = getCartTotal();
-  const shipping = subtotal > 150 ? 0 : 15.00; // Free shipping over $150
+  const shipping = subtotal > 150 ? 0 : 15.00; // Free shipping over ₹150
   const total = subtotal + shipping - discount;
 
   const handleApplyCoupon = (e) => {
@@ -70,7 +70,7 @@ const Cart = () => {
                         
                         <div className="text-center md:block flex justify-between items-center mt-4 md:mt-0">
                           <span className="md:hidden font-semibold text-gray-500">Price:</span>
-                          <span className="font-medium">${finalPrice.toFixed(2)}</span>
+                          <span className="font-medium">₹{finalPrice.toFixed(2)}</span>
                         </div>
                         
                         <div className="flex justify-center md:block flex justify-between items-center mt-2 md:mt-0">
@@ -94,7 +94,7 @@ const Cart = () => {
                         
                         <div className="text-right md:block flex justify-between items-center mt-2 md:mt-0">
                           <span className="md:hidden font-semibold text-gray-500">Total:</span>
-                          <span className="font-bold text-lg">${(finalPrice * item.quantity).toFixed(2)}</span>
+                          <span className="font-bold text-lg">₹{(finalPrice * item.quantity).toFixed(2)}</span>
                         </div>
                       </div>
                     );
@@ -111,11 +111,11 @@ const Cart = () => {
                 <div className="space-y-4 mb-6">
                   <div className="flex justify-between">
                     <span className="text-gray-600">Subtotal</span>
-                    <span className="font-medium">${subtotal.toFixed(2)}</span>
+                    <span className="font-medium">₹{subtotal.toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Shipping</span>
-                    <span className="font-medium">{shipping === 0 ? 'Free' : `$${shipping.toFixed(2)}`}</span>
+                    <span className="font-medium">{shipping === 0 ? 'Free' : `₹${shipping.toFixed(2)}`}</span>
                   </div>
                   {discount > 0 && (
                     <div className="flex justify-between text-green-600">
@@ -125,7 +125,7 @@ const Cart = () => {
                   )}
                   <div className="border-t pt-4 flex justify-between items-center">
                     <span className="text-lg font-bold">Total</span>
-                    <span className="text-2xl font-bold">${total.toFixed(2)}</span>
+                    <span className="text-2xl font-bold">₹{total.toFixed(2)}</span>
                   </div>
                 </div>
 

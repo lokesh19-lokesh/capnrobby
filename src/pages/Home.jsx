@@ -146,7 +146,7 @@ const Home = () => {
                 <FiTruck />
               </div>
               <h4 className="text-xl font-bold mb-2">Fast Delivery</h4>
-              <p className="text-gray-600">Free shipping on all orders over $150.</p>
+              <p className="text-gray-600">Free shipping on all orders over ₹150.</p>
             </div>
             
             <div className="flex flex-col items-center text-center p-6" data-aos="fade-up" data-aos-delay="100">
