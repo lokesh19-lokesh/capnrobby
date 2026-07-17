@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { getTrendingProducts, categories } from '../utils/mockData';
 import ProductCard from '../components/ProductCard';
+import catShirts from '../assets/cat_shirts_1784290004868.png';
+import catTshirts from '../assets/cat_tshirts_1784290015439.png';
+import catJeans from '../assets/cat_jeans_1784290024717.png';
+import catTrousers from '../assets/cat_trousers_1784290034567.png';
 import { FiTruck, FiShield, FiTag, FiRefreshCcw } from 'react-icons/fi';
 import heroVideo from '../assets/capnrobby.mp4';
 
@@ -69,16 +73,22 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {categories.slice(0, 4).map((category, index) => (
+            {[
+              { name: 'Shirts', img: catShirts },
+              { name: 'T-Shirts', img: catTshirts },
+              { name: 'Jeans', img: catJeans },
+              { name: 'Trousers', img: catTrousers }
+            ].map((cat, index) => (
               <Link 
                 key={index} 
-                to={`/categories/${category}`}
+                to={`/categories/${cat.name}`}
                 className="group relative h-64 md:h-80 overflow-hidden rounded-xl bg-gray-100 flex items-center justify-center"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
+                <img src={cat.img} alt={cat.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors z-10"></div>
-                <h3 className="relative z-20 text-white text-2xl font-bold tracking-wide group-hover:scale-110 transition-transform duration-500">{category}</h3>
+                <h3 className="relative z-20 text-white text-2xl font-bold tracking-wide group-hover:scale-110 transition-transform duration-500">{cat.name}</h3>
               </Link>
             ))}
           </div>
