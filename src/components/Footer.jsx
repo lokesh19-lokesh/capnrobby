@@ -67,7 +67,9 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} CAP'N ROBBY. All Rights Reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} CAP'N ROBBY. All Rights Reserved. | Designed by <a href="https://thepatternscompany.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors">The Patterns Company</a>
+          </p>
           <div className="mt-4 md:mt-0 flex space-x-4">
             <span>Premium Fabric</span>
             <span>•</span>
