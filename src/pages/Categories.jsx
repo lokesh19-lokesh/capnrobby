@@ -7,21 +7,33 @@ const Categories = () => {
   const { category } = useParams();
 
   if (!category) {
+    const categoryData = [
+      { name: 'Shirts', img: '/cat_shirts_1784290004868.png' },
+      { name: 'T-Shirts', img: '/cat_tshirts_1784290015439.png' },
+      { name: 'Jeans', img: '/cat_jeans_1784290024717.png' },
+      { name: 'Trousers', img: '/cat_trousers_1784290034567.png' },
+      { name: 'Hoodies', img: '/cat_hoodies_1784290683834.png' },
+      { name: 'Jackets', img: '/cat_jackets_1784290693789.png' },
+      { name: 'Footwear', img: '/cat_footwear_1784290703608.png' },
+      { name: 'Accessories', img: '/cat_accessories_1784290712619.png' }
+    ];
+
     return (
-      <div className="pt-24 pb-20 min-h-screen bg-light">
+      <div className="pt-32 pb-20 min-h-screen bg-light">
         <div className="container mx-auto px-4 md:px-8">
           <h1 className="text-4xl font-bold mb-12 text-center" data-aos="fade-up">All Categories</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {categories.map((cat, idx) => (
+            {categoryData.map((cat, idx) => (
               <Link 
                 key={idx} 
-                to={`/categories/${cat}`}
+                to={`/categories/${cat.name}`}
                 className="group relative h-64 overflow-hidden rounded-xl bg-gray-200 flex items-center justify-center shadow-sm hover:shadow-lg transition-all"
                 data-aos="fade-up"
                 data-aos-delay={idx * 50}
               >
+                <img src={cat.img} alt={cat.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors z-10"></div>
-                <h3 className="relative z-20 text-white text-2xl font-bold tracking-wide group-hover:scale-110 transition-transform duration-500 uppercase">{cat}</h3>
+                <h3 className="relative z-20 text-white text-2xl font-bold tracking-wide group-hover:scale-110 transition-transform duration-500 uppercase">{cat.name}</h3>
               </Link>
             ))}
           </div>
@@ -33,7 +45,7 @@ const Categories = () => {
   const categoryProducts = getProductsByCategory(category);
 
   return (
-    <div className="pt-24 pb-20 min-h-screen bg-light">
+    <div className="pt-32 pb-20 min-h-screen bg-light">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center text-sm text-gray-500 mb-8">
           <Link to="/" className="hover:text-black">Home</Link>
