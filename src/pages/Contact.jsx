@@ -24,7 +24,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-24 pb-20 min-h-screen bg-light">
+    <div className="pt-32 pb-20 min-h-screen bg-light">
       <div className="container mx-auto px-4 md:px-8">
         
         <div className="text-center mb-16">
