@@ -8,7 +8,7 @@ const About = () => {
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1600&q=80" 
+            src="/about_hero_1784290948537.png" 
             alt="About Background" 
             className="w-full h-full object-cover"
           />
@@ -32,7 +32,7 @@ const About = () => {
           <div className="flex flex-col md:flex-row gap-16 items-center">
             <div className="md:w-1/2" data-aos="fade-right">
               <img 
-                src="https://images.unsplash.com/photo-1550614000-4b95d415f115?w=800&q=80" 
+                src="/about_craftsmanship_1784290960674.png" 
                 alt="Craftsmanship" 
                 className="w-full h-auto rounded-xl shadow-lg"
               />
