@@ -26,7 +26,7 @@ const Navbar = () => {
   }, []);
 
   const navClasses = `fixed w-full z-50 transition-all duration-300 ${
-    isScrolled || !isHome ? 'bg-white shadow-md py-4 text-black' : 'bg-transparent py-6 text-white'
+    isScrolled || !isHome || isMobileMenuOpen ? 'bg-white shadow-md py-4 text-black' : 'bg-transparent py-6 text-white'
   }`;
 
   return (
