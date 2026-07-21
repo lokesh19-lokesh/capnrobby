@@ -22,7 +22,7 @@ const Categories = () => {
       <div className="pt-32 pb-20 min-h-screen bg-light">
         <div className="container mx-auto px-4 md:px-8">
           <h1 className="text-4xl font-bold mb-12 text-center" data-aos="fade-up">All Categories</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {categoryData.map((cat, idx) => (
               <Link 
                 key={idx} 
@@ -58,7 +58,7 @@ const Categories = () => {
         <h1 className="text-3xl md:text-4xl font-bold mb-8 uppercase tracking-tight" data-aos="fade-right">{category}</h1>
         
         {categoryProducts.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {categoryProducts.map(product => (
               <ProductCard key={product.id} product={product} />
             ))}

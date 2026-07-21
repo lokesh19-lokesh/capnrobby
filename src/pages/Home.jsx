@@ -104,7 +104,7 @@ const Home = () => {
             <p className="text-gray-600" data-aos="fade-up" data-aos-delay="200">The pieces everyone is talking about.</p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
             {trendingProducts.slice(0, 8).map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
@@ -140,8 +140,8 @@ const Home = () => {
       {/* Features */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="flex flex-col items-center text-center p-6" data-aos="fade-up" data-aos-delay="0">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
+            <div className="flex flex-col items-center text-center p-4 sm:p-6" data-aos="fade-up" data-aos-delay="0">
               <div className="w-16 h-16 bg-light rounded-full flex items-center justify-center mb-6 text-2xl text-black">
                 <FiTruck />
               </div>
@@ -149,7 +149,7 @@ const Home = () => {
               <p className="text-gray-600">Free shipping on all orders over ₹150.</p>
             </div>
             
-            <div className="flex flex-col items-center text-center p-6" data-aos="fade-up" data-aos-delay="100">
+            <div className="flex flex-col items-center text-center p-4 sm:p-6" data-aos="fade-up" data-aos-delay="100">
               <div className="w-16 h-16 bg-light rounded-full flex items-center justify-center mb-6 text-2xl text-black">
                 <FiShield />
               </div>
@@ -157,7 +157,7 @@ const Home = () => {
               <p className="text-gray-600">Crafted from the finest materials.</p>
             </div>
             
-            <div className="flex flex-col items-center text-center p-6" data-aos="fade-up" data-aos-delay="200">
+            <div className="flex flex-col items-center text-center p-4 sm:p-6" data-aos="fade-up" data-aos-delay="200">
               <div className="w-16 h-16 bg-light rounded-full flex items-center justify-center mb-6 text-2xl text-black">
                 <FiTag />
               </div>
@@ -165,7 +165,7 @@ const Home = () => {
               <p className="text-gray-600">High-end fashion without the markup.</p>
             </div>
             
-            <div className="flex flex-col items-center text-center p-6" data-aos="fade-up" data-aos-delay="300">
+            <div className="flex flex-col items-center text-center p-4 sm:p-6" data-aos="fade-up" data-aos-delay="300">
               <div className="w-16 h-16 bg-light rounded-full flex items-center justify-center mb-6 text-2xl text-black">
                 <FiRefreshCcw />
               </div>
