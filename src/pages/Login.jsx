@@ -6,7 +6,7 @@ const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
-    <div className="pt-24 pb-20 min-h-screen bg-light flex items-center justify-center">
+    <div className="pt-32 pb-20 min-h-screen bg-light flex items-center justify-center">
       <div className="container mx-auto px-4 flex justify-center">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden w-full max-w-4xl flex flex-col md:flex-row min-h-[600px]">
           

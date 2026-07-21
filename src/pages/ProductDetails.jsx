@@ -55,7 +55,7 @@ const ProductDetails = () => {
   };
 
   return (
-    <div className="pt-24 pb-20 min-h-screen bg-white">
+    <div className="pt-32 pb-20 min-h-screen bg-white">
       <div className="container mx-auto px-4 md:px-8">
         
         {/* Breadcrumb */}

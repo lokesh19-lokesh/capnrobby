@@ -7,7 +7,7 @@ const Wishlist = () => {
   const { wishlist } = useContext(ShopContext);
 
   return (
-    <div className="pt-24 pb-20 min-h-screen bg-light">
+    <div className="pt-32 pb-20 min-h-screen bg-light">
       <div className="container mx-auto px-4 md:px-8">
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center md:text-left">Your Wishlist</h1>
         
