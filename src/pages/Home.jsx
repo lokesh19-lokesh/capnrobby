@@ -29,20 +29,20 @@ const Home = () => {
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
         
-        <div className="container mx-auto px-4 z-10 text-center text-white">
+        <div className="container mx-auto px-4 z-10 text-center text-white mt-16 md:mt-0">
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tighter"
+            className="text-4xl md:text-7xl lg:text-8xl font-bold mb-4 md:mb-6 tracking-tighter"
           >
-            ELEVATE YOUR <br/><span className="text-primary">EVERYDAY STYLE</span>
+            ELEVATE YOUR <br className="hidden md:block" /><span className="text-primary block md:inline mt-2 md:mt-0">EVERYDAY STYLE</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light"
+            className="text-base md:text-xl mb-8 md:mb-10 max-w-2xl mx-auto font-light px-4 md:px-0"
           >
             Discover premium men's wear crafted for confidence, comfort, and timeless fashion.
           </motion.p>
@@ -50,12 +50,12 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-xs sm:max-w-none mx-auto"
           >
-            <Link to="/shop" className="bg-primary text-black font-bold py-4 px-10 hover:bg-white transition-colors duration-300">
+            <Link to="/shop" className="bg-primary text-black font-bold py-3 md:py-4 px-8 md:px-10 hover:bg-white transition-colors duration-300 w-full sm:w-auto">
               Shop Collection
             </Link>
-            <Link to="/categories" className="bg-transparent border-2 border-white text-white font-bold py-4 px-10 hover:bg-white hover:text-black transition-colors duration-300">
+            <Link to="/categories" className="bg-transparent border-2 border-white text-white font-bold py-3 md:py-4 px-8 md:px-10 hover:bg-white hover:text-black transition-colors duration-300 w-full sm:w-auto">
               New Arrivals
             </Link>
           </motion.div>
