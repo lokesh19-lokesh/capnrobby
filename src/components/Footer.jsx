@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <Link to="/" className="mb-8 inline-block">
               <Logo className="h-16 md:h-20" />
             </Link>
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="col-span-1">
             <h4 className="text-xl font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3 text-gray-400">
               <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
 
           {/* Categories */}
-          <div>
+          <div className="col-span-1">
             <h4 className="text-xl font-semibold mb-6">Categories</h4>
             <ul className="space-y-3 text-gray-400">
               <li><Link to="/categories/Shirts" className="hover:text-primary transition-colors">Shirts</Link></li>
@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <h4 className="text-xl font-semibold mb-6">Newsletter</h4>
             <p className="text-gray-400 mb-4">Subscribe to receive updates, access to exclusive deals, and more.</p>
             <form className="flex flex-col space-y-3" onSubmit={(e) => e.preventDefault()}>
